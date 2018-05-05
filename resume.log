@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6630 64-bit) (preloaded format=xelatex 2018.5.1)  4 MAY 2018 13:27
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6630 64-bit) (preloaded format=xelatex 2018.5.1)  5 MAY 2018 11:29
 entering extended mode
 **./resume.tex
 (resume.tex
@@ -769,14 +769,14 @@ LaTeX Info: Redefining \selectfont on input line 63.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
-* v-part:(T,H,B)=(42.67912pt, 745.46222pt, 56.9055pt)
+* v-part:(T,H,B)=(28.45274pt, 788.14136pt, 28.45274pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=483.69687pt
-* \textheight=745.46222pt
+* \textheight=788.14136pt
 * \oddsidemargin=-15.36449pt
 * \evensidemargin=-15.36449pt
-* \topmargin=-66.59087pt
+* \topmargin=-80.81725pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=11.0pt
@@ -861,25 +861,25 @@ LaTeX Info: Redefining \nameref on input line 63.
 
  (resume/education.tex
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.95015pt on input line 8.
+(Font)              scaled to size 10.95015pt on input line 12.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.67863pt on input line 8.
+(Font)              scaled to size 7.67863pt on input line 12.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.45398pt on input line 8.
+(Font)              scaled to size 5.45398pt on input line 12.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 10.94983pt on input line 8.
+(Font)              scaled to size 10.94983pt on input line 12.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.6784pt on input line 8.
+(Font)              scaled to size 7.6784pt on input line 12.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.45381pt on input line 8.
+(Font)              scaled to size 5.45381pt on input line 12.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/sl' in size <9> not avail
 able
 (Font)              Font shape `TU/SourceSansPro(2)/m/it' tried instead on inpu
-t line 8.
+t line 12.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/sl' in size <8> not avail
 able
 (Font)              Font shape `TU/SourceSansPro(2)/m/it' tried instead on inpu
-t line 8.
+t line 12.
 ) (resume/experience.tex)
 (resume/extracurricular.tex) (resume/honors.tex [1
 
@@ -895,7 +895,7 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 76.
 Here is how much of TeX's memory you used:
  25383 strings out of 427836
  457387 string characters out of 3152480
- 666336 words of memory out of 3000000
+ 668285 words of memory out of 3000000
  29133 multiletter control sequences out of 15000+200000
  532722 words of font info for 82 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
