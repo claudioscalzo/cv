@@ -66,6 +66,9 @@
 \RequirePackage{etoolbox}
 % Needed to change line spacing in specific environment
 \RequirePackage{setspace}
+% Needed to insert the picture
+\RequirePackage{graphicx}
+\RequirePackage{tikz}
 % Needed to manage fonts
 \ifxetex
   \RequirePackage[quiet]{fontspec}
@@ -101,7 +104,6 @@
 % Configure a directory location for fonts(default: 'fonts/')
 \newcommand*{\fontdir}[1][fonts/]{\def\@fontdir{#1}}
 \fontdir
-
 
 %-------------------------------------------------------------------------------
 %                Configuration for layout
@@ -384,6 +386,13 @@
 % Use to execute conditional statements by checking empty string
 \newcommand*{\ifempty}[3]{\ifthenelse{\isempty{#1}}{#2}{#3}}
 
+\newcommand*{\makecvpicture}{
+	\begin{tikzpicture}[remember picture, overlay]
+	\node [anchor=north east, inner sep=0pt, yshift=-1cm,xshift=-2cm]
+	at (current page.north east)
+	{\includegraphics[height=35mm, width=35mm]{example-image}};
+	\end{tikzpicture}
+}
 
 %-------------------------------------------------------------------------------
 %                Commands for elements of CV structure
@@ -391,7 +400,7 @@
 % Define a header for CV
 % Usage: \makecvheader
 \newcommand*{\makecvheader}{
-  \begin{center}
+  \begin{flushleft}
     \headerfirstnamestyle{
       \@firstname
     } \headerlastnamestyle{
@@ -439,7 +448,7 @@
             {
               \setbool{istart}{false} 
             }
-            {\@headersocialsep}
+            {\\}% CLAUDIO: was {\@headersocialsep}
           \href{https://\@github}{\faGithubSquare\ \@github}
         }
       \ifthenelse{\isundefined{\@stackoverflowid}}
@@ -485,8 +494,14 @@
     } \\
     \ifthenelse{\isundefined{\@quote}}
       {}
-      {\vspace{6.0mm}\headerquotestyle{\@quote\\}\vspace{5.0mm}}
-  \end{center}
+      {
+      \vspace{1.0mm}
+      \begin{enumerate}[leftmargin=*,rightmargin=\dimexpr\linewidth-13cm]
+      	\headerquotestyle{\@quote\\}
+      \end{enumerate}
+      \vspace{1.0mm}
+   	  }
+  \end{flushleft}
 }
 
 % Define a footer for CV
