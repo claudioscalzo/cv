@@ -80,6 +80,8 @@
 \RequirePackage[skins]{tcolorbox}
 % Needed to deal a paragraphs
 \RequirePackage{parskip}
+% CLAUDIO: Needed for the rectangle box
+\RequirePackage[framemethod=tikz]{mdframed}
 % Needed to deal hyperlink
 \RequirePackage[hidelinks,unicode]{hyperref}
 \hypersetup{%
@@ -397,6 +399,8 @@
 % CLAUDIO: Define the light text command
 \newcommand\textlf[1]{{\bodyfontlight#1}}
 
+% CLAUDIO: Declare the rectangle box
+\newmdenv[innerlinewidth=0.5pt, roundcorner=2pt,linecolor=awesome,backgroundcolor=awesome,innertopmargin=4pt,innerleftmargin=8pt,innerbottommargin=4pt]{cvbox}
 
 %-------------------------------------------------------------------------------
 %                Commands for elements of CV structure
@@ -411,11 +415,13 @@
         {\setlength{\photodim}{1.3cm}}%
         {\setlength{\photodim}{1.7cm}}%
       \ifthenelse{\equal{\@photoedge}{edge}}%
-        {\def\@photoborder{darkgray}}%
+        {\def\@photoborder{white}}%
         {\def\@photoborder{none}}%
+      \begin{cvbox} % CLAUDIO
       \begin{tikzpicture}%
         \node[\@photoshape, draw=\@photoborder, line width=0.3mm, inner sep=\photodim, fill overzoom image=\@photo] () {};
       \end{tikzpicture}
+      \end{cvbox}
     }%
   }
   \newlength{\headertextwidth}
@@ -571,7 +577,7 @@
   \vspace{-2.0mm}
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 8.5cm} R{3.5cm}} % 4.5 / 4.5
     \ifempty{#2#3}
       {\entrypositionstyle{#1} & \entrydatestyle{#4} \\}
       {\entrytitlestyle{#2} & \entrylocationstyle{#3} \\
