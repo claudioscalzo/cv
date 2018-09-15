@@ -372,7 +372,7 @@
 \newcommand{\acvHeaderAfterAddressSkip}{0mm}
 \newcommand{\acvHeaderIconSep}{\space}
 \newcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
-\newcommand{\acvHeaderAfterSocialSkip}{5mm}
+\newcommand{\acvHeaderAfterSocialSkip}{4mm}
 \newcommand{\acvHeaderAfterQuoteSkip}{0mm}
 
 % Others
