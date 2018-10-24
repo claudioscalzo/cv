@@ -376,8 +376,8 @@
 \newcommand{\acvHeaderAfterQuoteSkip}{0mm}
 
 % Others
-\newcommand{\acvSectionTopSkip}{0mm}
-\newcommand{\acvSectionContentTopSkip}{1mm}
+\newcommand{\acvSectionTopSkip}{4mm}
+\newcommand{\acvSectionContentTopSkip}{2mm}
 
 
 %-------------------------------------------------------------------------------
