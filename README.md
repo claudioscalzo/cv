@@ -1,1 +1,1 @@
-The current version of the CV can be found [here](cv.pdf).
+The current version of the CV can be found [here](https://github.com/claudioscalzo/cv/raw/master/cv.pdf).
